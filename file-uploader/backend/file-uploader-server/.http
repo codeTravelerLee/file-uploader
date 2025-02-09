@@ -7,3 +7,16 @@ Content-Disposition: form-data; name="file"; filename="test.txt"
 #이곳에 업로드할 대상 파일 지정 가능(경로로 써줘야함)
 < ./src/test.txt
 --test-file-upload--
+
+###
+
+POST  https://scaling-telegram-wpg5qjrp49625vq6-3000.app.github.dev/file-upload
+Content-Type: multipart/form-data; boundary=test-file-upload
+
+--test-file-upload
+Content-Disposition: form-data; name="file"; filename="sample-img.png"
+Content-Type: image/png
+
+#업로드할 파일(경로)
+< ./assests/images/sample-img.png
+--test-file-upload--
