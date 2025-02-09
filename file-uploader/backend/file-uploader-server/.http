@@ -1,0 +1,9 @@
+POST  https://scaling-telegram-wpg5qjrp49625vq6-3000.app.github.dev/file-upload
+Content-Type: multipart/form-data; boundary=test-file-upload
+
+--test-file-upload
+Content-Disposition: form-data; name="file"; filename="test.txt"
+
+#이곳에 실제 파일의 경로를 지정 가능
+< ./src/test.txt
+--test-file-upload--
