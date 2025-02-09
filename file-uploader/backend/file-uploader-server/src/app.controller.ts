@@ -17,7 +17,7 @@ export class AppController {
   uploadFile(@UploadedFile() file: Express.Multer.File) {
     // console.log(file.buffer.toString('utf-8'));
     console.log(file);
-    return 'your file is successfully uploaded.';
+    return `your file ${file.originalname} is successfully uploaded.`;
   }
 }
 
