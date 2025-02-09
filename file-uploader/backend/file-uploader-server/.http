@@ -4,6 +4,6 @@ Content-Type: multipart/form-data; boundary=test-file-upload
 --test-file-upload
 Content-Disposition: form-data; name="file"; filename="test.txt"
 
-#이곳에 실제 파일의 경로를 지정 가능
+#이곳에 업로드할 대상 파일 지정 가능(경로로 써줘야함)
 < ./src/test.txt
 --test-file-upload--
